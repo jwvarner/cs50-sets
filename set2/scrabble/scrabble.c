@@ -1,74 +1,47 @@
-/*
-Notes while watching lecture:
-
-Know your types, decide what type you want, and code accordingly
-use functions
-when you clearly define the problem and what the solution ought to look like 
-    you've done the majority of the work
-use the debuggger to step through your code
-Verbing N units == use a function
-
-***Note while coding, I found a C text book and reference the types and handling of those types when in doubt
-*/
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-int new_word(char)
-
 int main(void)
 {
-    char Alphabet[] = " ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+    int i = 0;
+    int j = 0;
+    char first_word[16];
+    char second_word[16];
+    int sum1;
+    int sum2;
+    int alphabet[] = { 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 85, 85, 88, 89, 90 };
     int Code[] = { 1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4 , 10, };
-    //Prompt user
-    //take prompt
-    //promt user
-    //take prompt
-    //convert prompt
-    //convert prompt
-    //compare prompts
-    //print output
-    //-------
-    /*
-        what do I know how to do?
-            prompt user
-            take prompt
-            compare prompts (if x == x, print; else...)
-            print output
-        what do I not know how to do?
-            convert prompt
-        what should be a function?
-            prompt user -- output: stored prompt, string
-            convert prompt -- output: converted prompt as integer
-            compare prompts -- output: result, string
-    */
-    char = new_word(input);
+    
+    printf("What is the first word? ");
+    scanf("%s", first_word);
+    printf("What is the second word? ");
+    scanf("%s", second_word);
+    
+    while (i < strlen(first_word))
+    {
+        sum1 = sum1 + Code[i];
+        i++;
+    }
+    printf("%d\n", sum1);
 
-    int convert = (int) c;
-    for(int i = 0; i < 26; i++)
+    while (j < strlen(second_word))
     {
-        if(convert == Alphabet[i])
-        {
-            printf("%i",Code[i]);
-        }
+        sum2 = sum2 + Code[j];
+        j++;
     }
-    int new_word(char)
-    {
-        char c;
-        printf("Enter a letter: ");
-        scanf("%c", c);
-        //ask and take input from a user
-        return 3;
-    }
-    /*iint convert(arg)
-    {
-        //take new word and convert it
-        return 2;
-    }
-    int compare(arg, arg2)
-    {
-        //compare two values and return a statement
-        return 1;
-    }*/
+    printf("%d\n", sum2);
 
+    if (sum1 == sum2)
+    {
+        printf("TIED!\n");
+    }
+    else if (sum1 <= sum2)
+    {
+        printf("Second word WON!\n");
+    }
+    else
+    {
+        printf("First word WON!\n");
+    }
 }
