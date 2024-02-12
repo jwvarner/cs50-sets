@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/joshvarner/Desktop/cs50/cs50-sets/set2/caesar/caesar'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003B00, symSize: 0x1FC }
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003B00, symSize: 0x1FC }
+  - { offsetInCU: 0xBF, offset: 0xBF, size: 0x8, addend: 0x0, symName: _is_key_value, symObjAddr: 0x1FC, symBinAddr: 0x100003CFC, symSize: 0xDC }
+  - { offsetInCU: 0x103, offset: 0x103, size: 0x8, addend: 0x0, symName: _calc_char, symObjAddr: 0x2D8, symBinAddr: 0x100003DD8, symSize: 0x94 }
+  - { offsetInCU: 0x139, offset: 0x139, size: 0x8, addend: 0x0, symName: _is_mod, symObjAddr: 0x36C, symBinAddr: 0x100003E6C, symSize: 0x2C }
+...
