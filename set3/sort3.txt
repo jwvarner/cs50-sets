@@ -1,0 +1,16 @@
+/*
+
+I'm Observing the cs50 program, the task was to run a program and determine what
+algorithm was used. I've picked 3 algorithms and have decided to try and code them.
+
+https://www.geeksforgeeks.org/timsort/
+https://www.geeksforgeeks.org/merge-sort/
+https://www.geeksforgeeks.org/radix-sort/
+
+*I've picked these somewhat at random, and will do my best to complete them.
+
+I googled: random list of 10 numbers between 1 and 200 and I was given:
+
+107 27 135 71 23 32 189 132 138 45
+
+*/
