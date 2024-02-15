@@ -45,22 +45,27 @@
 int main(void)
 {
     int array_one[10] = { 107, 27, 135, 71, 23, 32, 189, 132, 138, 45 };
-
-    int a=0;
-    while (array_one[a] != SIZE)
-    {
-        a++;
-    }
+    
+    int a = 0;
+    int run = 0;
+    int *array_n[] = NULL;
 
     for (int i = 0; i < SIZE; i++)
-        printf("%i", array_one[i]);
+    {
+        a++;
+        printf("%i ", array_one[i]);
+    }
     printf("\n");
 
     //Define the size of the run
-    printf("%i\n", a);
+    run = a / 2;
 
     //Divide the array into runs
-
+    for (int ay = 0; ay < run; ay++)
+    {
+        *array_n[ay] = &array_one[ay];
+    }
+    printf("%i", *array_n[0]); 
     //Merge the runs
 
     //Adjust the run size
