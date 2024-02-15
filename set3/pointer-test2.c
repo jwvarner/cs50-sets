@@ -8,7 +8,7 @@ int main(void)
     int pointer;
     
     arr1[0] = pointer;
-    pointer = arr2[0] + 1;
+    pointer = arr2[0];
 
     printf("%i\n", arr2[0]);
 }
